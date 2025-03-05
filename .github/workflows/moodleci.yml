@@ -110,6 +110,7 @@ jobs:
       #     using the Moodle App.
       - name: Install moodle-plugin-ci
         run: |
+          moodle-plugin-ci add-plugin marcusgreen/moodle-qtype_gapfill
           moodle-plugin-ci install --plugin ./plugin --db-host=127.0.0.1 --repo https://github.com/marxjohnson/moodle.git
         env:
           DB: ${{ matrix.database }}

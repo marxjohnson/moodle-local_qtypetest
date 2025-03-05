@@ -3,6 +3,7 @@ name: Moodle Plugin CI
 
 on:
   - workflow_dispatch
+  - push
 
 jobs:
   # Set the job key. The key is displayed as the job name
@@ -110,7 +111,82 @@ jobs:
       #     using the Moodle App.
       - name: Install moodle-plugin-ci
         run: |
+          moodle-plugin-ci add-plugin brissone/moodle-qtype_musictheory
+          moodle-plugin-ci add-plugin cleblond/moodle-qtype_easyoddname
+          moodle-plugin-ci add-plugin cleblond/moodle-qtype_easyofischer
+          moodle-plugin-ci add-plugin cleblond/moodle-qtype_easyolewis
+          moodle-plugin-ci add-plugin cleblond/moodle-qtype_easyomech
+          moodle-plugin-ci add-plugin cleblond/moodle-qtype_easyomechjs
+          moodle-plugin-ci add-plugin cleblond/moodle-qtype_easyoname
+          moodle-plugin-ci add-plugin cleblond/moodle-qtype_easyonamejs
+          moodle-plugin-ci add-plugin cleblond/moodle-qtype_easyonewman
+          moodle-plugin-ci add-plugin cleblond/moodle-qtype_easyoselect
+          moodle-plugin-ci add-plugin cleblond/moodle-qtype_easyoselectjs
+          moodle-plugin-ci add-plugin cleblond/moodle-qtype_easyostructure
+          moodle-plugin-ci add-plugin collins-construction/moodle-qtype_externaltask
+          moodle-plugin-ci add-plugin dualcube/moodle-qtype_ddmatch
+          moodle-plugin-ci add-plugin ecampbell/moodle-qtype_multichoiceset
+          moodle-plugin-ci add-plugin elearning-ostfalia/moodle-qtype_proforma
+          moodle-plugin-ci add-plugin EquipTecnicCampus/moodle-qtype_ubhotspots
+          moodle-plugin-ci add-plugin ethz-let/moodle-qtype_drawing
+          moodle-plugin-ci add-plugin ethz-let/moodle-qtype_freehanddrawing
+          moodle-plugin-ci add-plugin ethz-let/moodle-qtype_kprime
+          moodle-plugin-ci add-plugin ethz-let/moodle-qtype_lti
+          moodle-plugin-ci add-plugin ethz-let/moodle-qtype_sc
+          moodle-plugin-ci add-plugin ethz-let/moodle-qtype_mtf
+          moodle-plugin-ci add-plugin FormulasQuestion/moodle-qtype_formulas
+          moodle-plugin-ci add-plugin fredrikw/fwstructmatch
+          moodle-plugin-ci add-plugin gbateson/moodle-qtype_essayautograde
+          moodle-plugin-ci add-plugin --clone https://gricad-gitlab.univ-grenoble-alpes.fr/moodle-plugins/moodle-qtype_vplquestion
+          moodle-plugin-ci add-plugin jayhuber/musicinterval
+          moodle-plugin-ci add-plugin jayhuber/musickeysignature
+          moodle-plugin-ci add-plugin jayhuber/musicscale
+          moodle-plugin-ci add-plugin justinhunt/moodle-qtype_cloudpoodll
+          moodle-plugin-ci add-plugin justinhunt/moodle-qtype_poodllrecording
+          moodle-plugin-ci add-plugin KQMATH/moodle-qtype_shortmath
+          moodle-plugin-ci add-plugin Laboratoire-de-Chemoinformatique/moodle-qtype_molsimilarity
+          moodle-plugin-ci add-plugin Laboratoire-de-Chemoinformatique/moodle-qtype_reacsimilarity
+          moodle-plugin-ci add-plugin Ladone/blocklymoodle
+          moodle-plugin-ci add-plugin lechunche/type_calc_sheet
           moodle-plugin-ci add-plugin marcusgreen/moodle-qtype_gapfill
+          moodle-plugin-ci add-plugin marcusgreen/moodle-qtype_wordselect
+          moodle-plugin-ci add-plugin maths/moodle-qtype_stack
+          moodle-plugin-ci add-plugin mebis-lp/moodle-qtype_geogebra
+          moodle-plugin-ci add-plugin moodleou/moodle-qtype_combined
+          moodle-plugin-ci add-plugin moodleou/moodle-qtype_crossword
+          moodle-plugin-ci add-plugin moodleou/moodle-qtype_gapselect
+          moodle-plugin-ci add-plugin moodleou/moodle-qtype_opaque
+          moodle-plugin-ci add-plugin moodleou/moodle-qtype_oumultiresponse
+          moodle-plugin-ci add-plugin moodleou/moodle-qtype_pmatch
+          moodle-plugin-ci add-plugin moodleou/moodle-qtype_pmatchjme
+          moodle-plugin-ci add-plugin moodleou/moodle-qtype_recordrtc
+          moodle-plugin-ci add-plugin moodleou/moodle-qtype_varnumeric
+          moodle-plugin-ci add-plugin moodleou/moodle-qtype_varnumericset
+          moodle-plugin-ci add-plugin moodleou/moodle-qtype_varnumunit
+          moodle-plugin-ci add-plugin ndunand/moodle-qtype_matrix
+          moodle-plugin-ci add-plugin ndunand/moodle-qtype_multinumerical
+          moodle-plugin-ci add-plugin nfreear/moodle-qtype_calculatedobjects
+          moodle-plugin-ci add-plugin rezeau/moodle-qtype_answersselect
+          moodle-plugin-ci add-plugin rezeau/moodle-qtype_multianswerrgx
+          moodle-plugin-ci add-plugin rezeau/moodle-qtype_regexp
+          moodle-plugin-ci add-plugin SN-RECIT-formation-a-distance/moodle-qtype_numericalrecit
+          moodle-plugin-ci add-plugin StudiUM/moodle-qtype_tcs
+          moodle-plugin-ci add-plugin StudiUM/moodle-qtype_tcsjudgment
+          moodle-plugin-ci add-plugin timhunt/moodle-qtype_pmatchreverse
+          moodle-plugin-ci add-plugin trampgeek/moodle-qtype_coderunner
+          moodle-plugin-ci add-plugin tuttorsOfTheTUBerlin/javaunittest
+          moodle-plugin-ci add-plugin --branch MOODLE_36_STABLE vfremaux/moodle-qtype_splitset
+          moodle-plugin-ci add-plugin villalon/qtype_conceptmap
+          moodle-plugin-ci add-plugin VIP-Research-Group/moodle-qtype_shortanssimilarity
+          moodle-plugin-ci add-plugin vmsreeram/moodle-qtype_essayannotate
+          moodle-plugin-ci add-plugin wiris/moodle-qtype_essaywiris
+          moodle-plugin-ci add-plugin wiris/moodle-qtype_matchwiris
+          moodle-plugin-ci add-plugin wiris/moodle-qtype_multianswerwiris
+          moodle-plugin-ci add-plugin wiris/moodle-qtype_multichoicewiris
+          moodle-plugin-ci add-plugin wiris/moodle-qtype_shortanswerwiris
+          moodle-plugin-ci add-plugin wiris/moodle-qtype_truefalsewiris
+          moodle-plugin-ci add-plugin wiris/moodle-qtype_wq
+          moodle-plugin-ci add-plugin Wunderbyte-GmbH/moodle_qtype_jack
           moodle-plugin-ci install --plugin ./plugin --db-host=127.0.0.1 --repo https://github.com/marxjohnson/moodle.git
         env:
           DB: ${{ matrix.database }}

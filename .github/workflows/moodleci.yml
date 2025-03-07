@@ -43,7 +43,7 @@ jobs:
       fail-fast: false
       matrix:
         php: ['8.3']
-        moodle-branch: ['MDL-83541_main']
+        moodle-branch: ['MDL-83541_405_STABLE']
         database: [pgsql]
 
     # There is an alternative way allowing to define explicitly define which php, moodle-branch

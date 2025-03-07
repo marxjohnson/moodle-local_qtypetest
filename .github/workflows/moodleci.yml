@@ -150,7 +150,7 @@ jobs:
           moodle-plugin-ci add-plugin lechunche/type_calc_sheet
           moodle-plugin-ci add-plugin marcusgreen/moodle-qtype_gapfill
           moodle-plugin-ci add-plugin marcusgreen/moodle-qtype_wordselect
-          moodle-plugin-ci add-plugin maths/moodle-qtype_stack
+          #moodle-plugin-ci add-plugin maths/moodle-qtype_stack TODO: Add maxima
           moodle-plugin-ci add-plugin mebis-lp/moodle-qtype_geogebra
           moodle-plugin-ci add-plugin moodleou/moodle-qtype_combined
           moodle-plugin-ci add-plugin moodleou/moodle-qtype_crossword

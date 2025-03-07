@@ -168,25 +168,25 @@ jobs:
           # moodle-plugin-ci add-plugin rezeau/moodle-qtype_answersselect
           # moodle-plugin-ci add-plugin rezeau/moodle-qtype_multianswerrgx
           # moodle-plugin-ci add-plugin rezeau/moodle-qtype_regexp
-          # moodle-plugin-ci add-plugin SN-RECIT-formation-a-distance/moodle-qtype_numericalrecit
-          # moodle-plugin-ci add-plugin StudiUM/moodle-qtype_tcs
-          # moodle-plugin-ci add-plugin StudiUM/moodle-qtype_tcsjudgment
-          # moodle-plugin-ci add-plugin timhunt/moodle-qtype_pmatchreverse
-          # moodle-plugin-ci add-plugin trampgeek/moodle-qtype_coderunner
-          # moodle-plugin-ci add-plugin tuttorsOfTheTUBerlin/javaunittest
-          # moodle-plugin-ci add-plugin --branch MOODLE_36_STABLE vfremaux/moodle-qtype_splitset
-          # moodle-plugin-ci add-plugin villalon/qtype_conceptmap
-          # moodle-plugin-ci add-plugin VIP-Research-Group/moodle-qtype_shortanssimilarity
-          # moodle-plugin-ci add-plugin vmsreeram/moodle-qtype_essayannotate
-          # moodle-plugin-ci add-plugin wiris/moodle-qtype_essaywiris
-          # moodle-plugin-ci add-plugin wiris/moodle-qtype_matchwiris
-          # moodle-plugin-ci add-plugin wiris/moodle-qtype_multianswerwiris
-          # moodle-plugin-ci add-plugin wiris/moodle-qtype_multichoicewiris
-          # moodle-plugin-ci add-plugin wiris/moodle-qtype_shortanswerwiris
-          # moodle-plugin-ci add-plugin wiris/moodle-qtype_truefalsewiris
-          # moodle-plugin-ci add-plugin wiris/moodle-qtype_wq
-          # moodle-plugin-ci add-plugin Wunderbyte-GmbH/moodle_qtype_jack
-          #mv ${GITHUB_WORKSPACE}/moodle-plugin-ci-plugins/moodle-qtype_numericalrecit/src/* ${GITHUB_WORKSPACE}/moodle-plugin-ci-plugins/moodle-qtype_numericalrecit
+          moodle-plugin-ci add-plugin SN-RECIT-formation-a-distance/moodle-qtype_numericalrecit
+          moodle-plugin-ci add-plugin StudiUM/moodle-qtype_tcs
+          moodle-plugin-ci add-plugin StudiUM/moodle-qtype_tcsjudgment
+          moodle-plugin-ci add-plugin timhunt/moodle-qtype_pmatchreverse
+          moodle-plugin-ci add-plugin trampgeek/moodle-qtype_coderunner
+          moodle-plugin-ci add-plugin tuttorsOfTheTUBerlin/javaunittest
+          moodle-plugin-ci add-plugin --branch MOODLE_36_STABLE vfremaux/moodle-qtype_splitset
+          moodle-plugin-ci add-plugin villalon/qtype_conceptmap
+          moodle-plugin-ci add-plugin VIP-Research-Group/moodle-qtype_shortanssimilarity
+          moodle-plugin-ci add-plugin vmsreeram/moodle-qtype_essayannotate
+          moodle-plugin-ci add-plugin wiris/moodle-qtype_essaywiris
+          moodle-plugin-ci add-plugin wiris/moodle-qtype_matchwiris
+          moodle-plugin-ci add-plugin wiris/moodle-qtype_multianswerwiris
+          moodle-plugin-ci add-plugin wiris/moodle-qtype_multichoicewiris
+          moodle-plugin-ci add-plugin wiris/moodle-qtype_shortanswerwiris
+          moodle-plugin-ci add-plugin wiris/moodle-qtype_truefalsewiris
+          moodle-plugin-ci add-plugin wiris/moodle-qtype_wq
+          moodle-plugin-ci add-plugin Wunderbyte-GmbH/moodle_qtype_jack
+          mv ${GITHUB_WORKSPACE}/moodle-plugin-ci-plugins/moodle-qtype_numericalrecit/src/* ${GITHUB_WORKSPACE}/moodle-plugin-ci-plugins/moodle-qtype_numericalrecit
           moodle-plugin-ci install --plugin ./plugin --db-host=127.0.0.1 --repo https://github.com/marxjohnson/moodle.git
         env:
           DB: ${{ matrix.database }}

@@ -155,11 +155,11 @@ jobs:
           # moodle-plugin-ci add-plugin moodleou/moodle-qtype_crossword
           # moodle-plugin-ci add-plugin moodleou/moodle-qtype_gapselect
           # moodle-plugin-ci add-plugin moodleou/moodle-qtype_opaque
-          # moodle-plugin-ci add-plugin moodleou/moodle-qtype_oumultiresponse
-          # moodle-plugin-ci add-plugin moodleou/moodle-qtype_pmatch
-          # moodle-plugin-ci add-plugin moodleou/moodle-qtype_pmatchjme
-          # moodle-plugin-ci add-plugin moodleou/moodle-qtype_recordrtc
-          # moodle-plugin-ci add-plugin moodleou/moodle-qtype_varnumeric
+          moodle-plugin-ci add-plugin moodleou/moodle-qtype_oumultiresponse
+          moodle-plugin-ci add-plugin moodleou/moodle-qtype_pmatch
+          moodle-plugin-ci add-plugin moodleou/moodle-qtype_pmatchjme
+          moodle-plugin-ci add-plugin moodleou/moodle-qtype_recordrtc
+          moodle-plugin-ci add-plugin moodleou/moodle-qtype_varnumeric
           moodle-plugin-ci add-plugin moodleou/moodle-qtype_varnumericset
           moodle-plugin-ci add-plugin moodleou/moodle-qtype_varnumunit
           moodle-plugin-ci add-plugin ndunand/moodle-qtype_matrix

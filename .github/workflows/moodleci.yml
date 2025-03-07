@@ -127,7 +127,8 @@ jobs:
           moodle-plugin-ci add-plugin dualcube/moodle-qtype_ddmatch
           moodle-plugin-ci add-plugin ecampbell/moodle-qtype_multichoiceset
           moodle-plugin-ci add-plugin elearning-ostfalia/moodle-qtype_proforma
-          moodle-plugin-ci add-plugin ethz-let/moodle-qtype_drawing
+          #moodle-plugin-ci add-plugin ethz-let/moodle-qtype_drawing bugfix:
+          moodle-plugin-ci add-plugin --branch issue31-master SysBind/moodle-qtype_drawing 
           moodle-plugin-ci add-plugin ethz-let/moodle-qtype_freehanddrawing
           moodle-plugin-ci add-plugin ethz-let/moodle-qtype_kprime
           moodle-plugin-ci add-plugin ethz-let/moodle-qtype_lti
@@ -153,7 +154,7 @@ jobs:
           moodle-plugin-ci add-plugin mebis-lp/moodle-qtype_geogebra
           moodle-plugin-ci add-plugin moodleou/moodle-qtype_combined
           moodle-plugin-ci add-plugin moodleou/moodle-qtype_crossword
-          #moodle-plugin-ci add-plugin moodleou/moodle-qtype_gapselect
+          #moodle-plugin-ci add-plugin moodleou/moodle-qtype_gapselect # Says it's already installed?
           moodle-plugin-ci add-plugin moodleou/moodle-qtype_opaque
           moodle-plugin-ci add-plugin moodleou/moodle-qbehaviour_opaque
           moodle-plugin-ci add-plugin moodleou/moodle-qtype_oumultiresponse

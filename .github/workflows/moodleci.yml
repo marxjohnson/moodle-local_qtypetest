@@ -162,6 +162,7 @@ jobs:
           moodle-plugin-ci add-plugin moodleou/moodle-qtype_pmatch
           moodle-plugin-ci add-plugin moodleou/moodle-qtype_pmatchjme
           moodle-plugin-ci add-plugin moodleou/moodle-qtype_recordrtc
+          moodle-plugin-ci add-plugin moodleou/moodle-qbehaviour_selfassess
           moodle-plugin-ci add-plugin moodleou/moodle-qtype_varnumeric
           moodle-plugin-ci add-plugin moodleou/moodle-qtype_varnumericset
           moodle-plugin-ci add-plugin moodleou/moodle-qtype_varnumunit
@@ -176,6 +177,7 @@ jobs:
           moodle-plugin-ci add-plugin StudiUM/moodle-qtype_tcsjudgment
           moodle-plugin-ci add-plugin timhunt/moodle-qtype_pmatchreverse
           moodle-plugin-ci add-plugin trampgeek/moodle-qtype_coderunner
+          moodle-plugin-ci add-plugin trampgeek/moodle-qbehaviour_adaptive_adapted_for_coderunner
           moodle-plugin-ci add-plugin tuttorsOfTheTUBerlin/javaunittest
           moodle-plugin-ci add-plugin --branch MOODLE_36_STABLE vfremaux/moodle-qtype_splitset
           moodle-plugin-ci add-plugin villalon/qtype_conceptmap

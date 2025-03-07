@@ -187,7 +187,7 @@ jobs:
           moodle-plugin-ci add-plugin wiris/moodle-qtype_truefalsewiris
           moodle-plugin-ci add-plugin wiris/moodle-qtype_wq
           moodle-plugin-ci add-plugin Wunderbyte-GmbH/moodle_qtype_jack
-          mv ${GITHUB_WORKSPACE}/question/type/numericalrecit/src/* ${GITHUB_WORKSPACE}/question/type/numericalrecit
+          ls ${GITHUB_WORKSPACE}
           moodle-plugin-ci install --plugin ./plugin --db-host=127.0.0.1 --repo https://github.com/marxjohnson/moodle.git
         env:
           DB: ${{ matrix.database }}

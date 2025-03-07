@@ -144,7 +144,7 @@ jobs:
           moodle-plugin-ci add-plugin justinhunt/moodle-qtype_cloudpoodll
           moodle-plugin-ci add-plugin justinhunt/moodle-qtype_poodllrecording
           moodle-plugin-ci add-plugin KQMATH/moodle-qtype_shortmath
-          moodle-plugin-ci add-plugin Laboratoire-de-Chemoinformatique/moodle-qtype_molsimilarity
+          moodle-plugin-ci add-plugin --branch MOODLE_STABLE_405 Laboratoire-de-Chemoinformatique/moodle-qtype_molsimilarity
           moodle-plugin-ci add-plugin Laboratoire-de-Chemoinformatique/moodle-qtype_reacsimilarity
           moodle-plugin-ci add-plugin Ladone/blocklymoodle
           moodle-plugin-ci add-plugin lechunche/type_calc_sheet

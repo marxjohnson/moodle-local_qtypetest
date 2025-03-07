@@ -143,7 +143,8 @@ jobs:
           moodle-plugin-ci add-plugin jayhuber/musicscale
           moodle-plugin-ci add-plugin justinhunt/moodle-qtype_cloudpoodll
           moodle-plugin-ci add-plugin justinhunt/moodle-qtype_poodllrecording
-          moodle-plugin-ci add-plugin KQMATH/moodle-qtype_shortmath
+          #moodle-plugin-ci add-plugin KQMATH/moodle-qtype_shortmath bugfix:
+          moodle-plugin-ci add-plugin --branch issue-67 catalyst/moodle-qtype_shortmath
           moodle-plugin-ci add-plugin --branch MOODLE_STABLE_405 Laboratoire-de-Chemoinformatique/moodle-qtype_molsimilarity
           moodle-plugin-ci add-plugin Laboratoire-de-Chemoinformatique/moodle-qtype_reacsimilarity
           moodle-plugin-ci add-plugin Ladone/blocklymoodle

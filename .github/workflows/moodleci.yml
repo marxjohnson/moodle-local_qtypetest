@@ -127,7 +127,6 @@ jobs:
           moodle-plugin-ci add-plugin dualcube/moodle-qtype_ddmatch
           moodle-plugin-ci add-plugin ecampbell/moodle-qtype_multichoiceset
           moodle-plugin-ci add-plugin elearning-ostfalia/moodle-qtype_proforma
-          moodle-plugin-ci add-plugin EquipTecnicCampus/moodle-qtype_ubhotspots
           moodle-plugin-ci add-plugin ethz-let/moodle-qtype_drawing
           moodle-plugin-ci add-plugin ethz-let/moodle-qtype_freehanddrawing
           moodle-plugin-ci add-plugin ethz-let/moodle-qtype_kprime

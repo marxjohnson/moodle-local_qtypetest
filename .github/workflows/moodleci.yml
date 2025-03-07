@@ -154,8 +154,8 @@ jobs:
           moodle-plugin-ci add-plugin moodleou/moodle-qtype_combined
           moodle-plugin-ci add-plugin moodleou/moodle-qtype_crossword
           moodle-plugin-ci add-plugin moodleou/moodle-qtype_gapselect
-          moodle-plugin-ci add-plugin moodleou/moodle-qtype_opaque
-          moodle-plugin-ci add-plugin moodleou/moodle-qbehaviour_opaque
+          #moodle-plugin-ci add-plugin moodleou/moodle-qtype_opaque
+          #moodle-plugin-ci add-plugin moodleou/moodle-qbehaviour_opaque
           moodle-plugin-ci add-plugin moodleou/moodle-qtype_oumultiresponse
           moodle-plugin-ci add-plugin moodleou/moodle-qtype_pmatch
           moodle-plugin-ci add-plugin moodleou/moodle-qtype_pmatchjme

@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace tests;
+namespace mod_quiz\backup;
 
 use advanced_testcase;
 use backup_controller;
@@ -63,12 +63,11 @@ final class repeated_restore_test extends advanced_testcase {
 
         // Create a quiz with questions in the first course.
         $quiz = $this->create_test_quiz($course1);
-        $qbank = $generator->get_plugin_generator('mod_qbank')->create_instance(['course' => $course1->id]);
-        $context = \context_module::instance($qbank->cmid);
+        $coursecontext = \context_course::instance($course1->id);
         $questiongenerator = $this->getDataGenerator()->get_plugin_generator('core_question');
 
         // Create a question category.
-        $cat = $questiongenerator->create_question_category(['contextid' => $context->id]);
+        $cat = $questiongenerator->create_question_category(['contextid' => $coursecontext->id]);
 
         // Create a short answer question.
         $saq = $questiongenerator->create_question('shortanswer', null, ['category' => $cat->id]);
@@ -219,13 +218,11 @@ final class repeated_restore_test extends advanced_testcase {
         $course1 = $generator->create_course();
         $teacher = $USER;
         $generator->enrol_user($teacher->id, $course1->id, 'editingteacher');
-        $qbank = $generator->get_plugin_generator('mod_qbank')->create_instance(['course' => $course1->id]);
-
-        $context = \context_module::instance($qbank->cmid);
+        $coursecontext = \context_course::instance($course1->id);
         $questiongenerator = $this->getDataGenerator()->get_plugin_generator('core_question');
 
         // Create a question category.
-        $cat = $questiongenerator->create_question_category(['contextid' => $context->id]);
+        $cat = $questiongenerator->create_question_category(['contextid' => $coursecontext->id]);
 
         // Create 2 quizzes with 2 questions multichoice.
         $quiz1 = $this->create_test_quiz($course1);
@@ -303,12 +300,11 @@ final class repeated_restore_test extends advanced_testcase {
         $course1 = $generator->create_course();
         $teacher = $USER;
         $generator->enrol_user($teacher->id, $course1->id, 'editingteacher');
-        $qbank = $generator->get_plugin_generator('mod_qbank')->create_instance(['course' => $course1->id]);
-        $context = \context_module::instance($qbank->cmid);
+        $coursecontext = \context_course::instance($course1->id);
         $questiongenerator = $this->getDataGenerator()->get_plugin_generator('core_question');
 
         // Create a question category.
-        $cat = $questiongenerator->create_question_category(['contextid' => $context->id]);
+        $cat = $questiongenerator->create_question_category(['contextid' => $coursecontext->id]);
 
         // Create a quiz with 2 identical but separate questions.
         $quiz1 = $this->create_test_quiz($course1);
@@ -372,12 +368,11 @@ final class repeated_restore_test extends advanced_testcase {
         $course1 = $generator->create_course();
         $teacher = $USER;
         $generator->enrol_user($teacher->id, $course1->id, 'editingteacher');
-        $qbank = $generator->get_plugin_generator('mod_qbank')->create_instance(['course' => $course1->id]);
-        $context = \context_module::instance($qbank->cmid);
+        $coursecontext = \context_course::instance($course1->id);
         $questiongenerator = $this->getDataGenerator()->get_plugin_generator('core_question');
 
         // Create a question category.
-        $cat = $questiongenerator->create_question_category(['contextid' => $context->id]);
+        $cat = $questiongenerator->create_question_category(['contextid' => $coursecontext->id]);
 
         // Create a quiz with 2 identical but separate questions.
         $quiz1 = $this->create_test_quiz($course1);
@@ -440,18 +435,15 @@ final class repeated_restore_test extends advanced_testcase {
         $generator = $this->getDataGenerator();
         $course1 = $generator->create_course();
         $course2 = $generator->create_course();
-        $course3 = $generator->create_course();
-        $qbank = $generator->get_plugin_generator('mod_qbank')->create_instance(['course' => $course3->id]);
         $teacher = $USER;
         $generator->enrol_user($teacher->id, $course1->id, 'editingteacher');
         $generator->enrol_user($teacher->id, $course2->id, 'editingteacher');
-        $generator->enrol_user($teacher->id, $course3->id, 'editingteacher');
 
-        $context = \context_module::instance($qbank->cmid);
         $questiongenerator = $this->getDataGenerator()->get_plugin_generator('core_question');
 
         // Create a question category.
-        $cat = $questiongenerator->create_question_category(['contextid' => $context->id]);
+        $systemcontext = \context_system::instance();
+        $cat = $questiongenerator->create_question_category(['contextid' => $systemcontext->id]);
 
         // Create quiz with question.
         $quiz1 = $this->create_test_quiz($course1);
@@ -532,12 +524,11 @@ final class repeated_restore_test extends advanced_testcase {
         $course1 = $generator->create_course();
         $teacher = $USER;
         $generator->enrol_user($teacher->id, $course1->id, 'editingteacher');
-        $qbank = $generator->get_plugin_generator('mod_qbank')->create_instance(['course' => $course1->id]);
-        $context = \context_module::instance($qbank->cmid);
+        $coursecontext = \context_course::instance($course1->id);
         $questiongenerator = $this->getDataGenerator()->get_plugin_generator('core_question');
 
         // Create a question category.
-        $cat = $questiongenerator->create_question_category(['contextid' => $context->id]);
+        $cat = $questiongenerator->create_question_category(['contextid' => $coursecontext->id]);
 
         // Create 2 questions multichoice.
         $quiz1 = $this->create_test_quiz($course1);
@@ -648,12 +639,11 @@ final class repeated_restore_test extends advanced_testcase {
         $course1 = $generator->create_course();
         $teacher = $USER;
         $generator->enrol_user($teacher->id, $course1->id, 'editingteacher');
-        $qbank = $generator->get_plugin_generator('mod_qbank')->create_instance(['course' => $course1->id]);
-        $context = \context_module::instance($qbank->cmid);
+        $coursecontext = \context_course::instance($course1->id);
         $questiongenerator = $this->getDataGenerator()->get_plugin_generator('core_question');
 
         // Create a question category.
-        $cat = $questiongenerator->create_question_category(['contextid' => $context->id]);
+        $cat = $questiongenerator->create_question_category(['contextid' => $coursecontext->id]);
 
         // A quiz with 2 multichoice questions.
         $quiz1 = $this->create_test_quiz($course1);

@@ -160,14 +160,14 @@ jobs:
           # moodle-plugin-ci add-plugin moodleou/moodle-qtype_pmatchjme
           # moodle-plugin-ci add-plugin moodleou/moodle-qtype_recordrtc
           # moodle-plugin-ci add-plugin moodleou/moodle-qtype_varnumeric
-          # moodle-plugin-ci add-plugin moodleou/moodle-qtype_varnumericset
-          # moodle-plugin-ci add-plugin moodleou/moodle-qtype_varnumunit
-          # moodle-plugin-ci add-plugin ndunand/moodle-qtype_matrix
-          # moodle-plugin-ci add-plugin ndunand/moodle-qtype_multinumerical
-          # moodle-plugin-ci add-plugin nfreear/moodle-qtype_calculatedobjects
-          # moodle-plugin-ci add-plugin rezeau/moodle-qtype_answersselect
-          # moodle-plugin-ci add-plugin rezeau/moodle-qtype_multianswerrgx
-          # moodle-plugin-ci add-plugin rezeau/moodle-qtype_regexp
+          moodle-plugin-ci add-plugin moodleou/moodle-qtype_varnumericset
+          moodle-plugin-ci add-plugin moodleou/moodle-qtype_varnumunit
+          moodle-plugin-ci add-plugin ndunand/moodle-qtype_matrix
+          moodle-plugin-ci add-plugin ndunand/moodle-qtype_multinumerical
+          moodle-plugin-ci add-plugin nfreear/moodle-qtype_calculatedobjects
+          moodle-plugin-ci add-plugin rezeau/moodle-qtype_answersselect
+          moodle-plugin-ci add-plugin rezeau/moodle-qtype_multianswerrgx
+          moodle-plugin-ci add-plugin rezeau/moodle-qtype_regexp
           moodle-plugin-ci add-plugin SN-RECIT-formation-a-distance/moodle-qtype_numericalrecit
           moodle-plugin-ci add-plugin StudiUM/moodle-qtype_tcs
           moodle-plugin-ci add-plugin StudiUM/moodle-qtype_tcsjudgment

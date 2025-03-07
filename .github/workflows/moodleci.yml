@@ -152,6 +152,7 @@ jobs:
           moodle-plugin-ci add-plugin marcusgreen/moodle-qtype_gapfill
           moodle-plugin-ci add-plugin marcusgreen/moodle-qtype_wordselect
           #moodle-plugin-ci add-plugin maths/moodle-qtype_stack TODO: Add maxima
+          moodle-plugin-ci add-plugin maths/moodle-qbehaviour_adaptivemultipart
           moodle-plugin-ci add-plugin mebis-lp/moodle-qtype_geogebra
           moodle-plugin-ci add-plugin moodleou/moodle-qtype_combined
           moodle-plugin-ci add-plugin moodleou/moodle-qtype_crossword
@@ -176,7 +177,7 @@ jobs:
           moodle-plugin-ci add-plugin StudiUM/moodle-qtype_tcs
           moodle-plugin-ci add-plugin StudiUM/moodle-qtype_tcsjudgment
           moodle-plugin-ci add-plugin timhunt/moodle-qtype_pmatchreverse
-          moodle-plugin-ci add-plugin trampgeek/moodle-qtype_coderunner
+          #moodle-plugin-ci add-plugin trampgeek/moodle-qtype_coderunner TODO: Add test config
           moodle-plugin-ci add-plugin trampgeek/moodle-qbehaviour_adaptive_adapted_for_coderunner
           moodle-plugin-ci add-plugin tuttorsOfTheTUBerlin/javaunittest
           moodle-plugin-ci add-plugin --branch MOODLE_36_STABLE vfremaux/moodle-qtype_splitset
